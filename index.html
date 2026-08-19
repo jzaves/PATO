@@ -1,4 +1,5 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,86 +12,150 @@
   <link rel="apple-touch-icon" href="favicon-180.png">
 
   <style>
-    :root { --text:#111; --muted:#666; }
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      background:#fff;
-      color:var(--text);
+    :root {
+      --white: #ffffff;
+      --muted: rgba(255,255,255,0.72);
+      --orange: #f37021;
     }
-    .main{
-      flex:1;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px 16px;
-      text-align:center;
-    }
-    .sub{
-      margin-bottom:18px;
-      font-size:14px;
-      color:var(--muted);
-      letter-spacing:0.02em;
-    }
-    .card img{
-      max-width:260px;
-      height:auto;
-      margin-bottom:18px;
-    }
-    .email{
-      display:inline-block;
-      margin-top:2px;
-      color:var(--text);
-      text-decoration:none;
-      font-size:16px;
-    }
-    footer{
-      border-top:1px solid #eee;
-      padding:18px 16px;
-      font-size:12px;
-      color:var(--muted);
-      line-height:1.45;
-      text-align:center;
-    }
-    footer a{
-      color:var(--muted);
-      text-decoration:none;
-    }
-    footer a:hover{ text-decoration:underline; }
-    .links{ margin-top:8px; }
-  </style>
-</head>
-<body>
-  <main class="main">
-   <div class="card">
-  <div class="sub">Coming soon.</div>
-  <img src="logo.png" alt="PATO logo" />
-  <div>
-    <a class="email" href="mailto:patoltd.uk@gmail.com">patoltd.uk@gmail.com</a>
-  </div>
 
-  <div style="margin-top:18px;">
-    <a href="enter.html" style="
-      display:inline-block;
-      padding:8px 18px;
-      font-size:14px;
-      text-decoration:none;
-      border:1px solid #111;
-      color:#111;
-      border-radius:4px;
-    ">Enter</a>
-  </div>
-</div>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+      /* PATO dark blue gradient */
+      background:
+        radial-gradient(
+          circle at 50% 38%,
+          #064d6d 0%,
+          #003b59 35%,
+          #002b45 65%,
+          #001e33 100%
+        );
+
+      color: var(--white);
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      text-align: center;
+    }
+
+    .sub {
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    .card img {
+      max-width: 260px;
+      height: auto;
+      margin-bottom: 18px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 2px;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .email:hover {
+      text-decoration: underline;
+    }
+
+    .enter-button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 18px;
+      font-size: 14px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.85);
+      color: var(--white);
+      border-radius: 4px;
+      transition: 0.2s ease;
+    }
+
+    .enter-button:hover {
+      background: var(--white);
+      color: #002b45;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.14);
+      padding: 18px 16px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .links {
+      margin-top: 8px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main class="main">
+
+    <div class="card">
+
+      <div class="sub">Coming soon.</div>
+
+      <img src="logo.png" alt="PATO logo" />
+
+      <div>
+        <a class="email" href="mailto:patoltd.uk@gmail.com">
+          patoltd.uk@gmail.com
+        </a>
+      </div>
+
+      <div>
+        <a class="enter-button" href="enter.html">
+          Enter
+        </a>
+      </div>
+
+    </div>
 
   </main>
 
   <footer>
+
     <div>© 2026 PATO Ltd</div>
-    <div>Registered in England and Wales (Company No. 16982016)</div>
-    <div>Registered office: 60 Tottenham Court Road, Office 734, Fitzrovia, London, W1T 2EW</div>
+
+    <div>
+      Registered in England and Wales (Company No. 16982016)
+    </div>
+
+    <div>
+      Registered office: 60 Tottenham Court Road, Office 734, Fitzrovia, London, W1T 2EW
+    </div>
 
     <div class="links">
       <a href="privacy.html">Privacy Policy</a> ·
@@ -98,10 +163,11 @@
     </div>
 
     <div style="margin-top:8px;">
-      PATO Ltd is not authorised or regulated by the Financial Conduct Authority. No financial, legal, or tax advice is provided.
+      PATO Ltd is not authorised or regulated by the Financial Conduct Authority.
+      No financial, legal, or tax advice is provided.
     </div>
+
   </footer>
+
 </body>
 </html>
-
-
